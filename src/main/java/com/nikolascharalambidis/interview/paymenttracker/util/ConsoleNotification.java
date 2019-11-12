@@ -31,7 +31,7 @@ public class ConsoleNotification implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public final void run() {
 		this.notificationService.scheduleAtFixedRate(this.notification, 0, this.period, TimeUnit.SECONDS);
 	}
 }

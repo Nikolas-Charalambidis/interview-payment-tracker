@@ -31,7 +31,7 @@ public class StringPayments implements Payments {
 	}
 
 	@Override
-	public List<Money> payments() {
+	public final List<Money> payments() {
 		final List<Money> moneyList = new ArrayList<>();
 		for (int i = 0; i < this.lines.size(); i++) {
 			final String line = this.lines.get(i);

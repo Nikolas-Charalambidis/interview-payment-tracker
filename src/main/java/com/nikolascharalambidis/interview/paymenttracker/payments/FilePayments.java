@@ -30,7 +30,7 @@ public class FilePayments implements Payments {
 	}
 
 	@Override
-	public List<Money> payments() {
+	public final List<Money> payments() {
 		final List<Money> moneyList = new ArrayList<>();
 		try {
 			final List<String> lines = new Lines(this.fileName).get();

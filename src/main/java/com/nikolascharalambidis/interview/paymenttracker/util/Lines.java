@@ -46,7 +46,7 @@ public class Lines implements Supplier<List<String>> {
 	}
 
 	@Override
-	public List<String> get() {
+	public final List<String> get() {
 		return lines;
 	}
 }

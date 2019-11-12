@@ -54,7 +54,7 @@ public class Main implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public final void run() {
 		final String currencies = Arrays.stream(Currency.values()).map(Currency::name).collect(Collectors.joining(", "));
 		Arrays.asList(
 			"Hi, welcome to the payment tracker ^___^",
