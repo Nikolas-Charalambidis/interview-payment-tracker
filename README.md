@@ -38,7 +38,7 @@ As a developer, I have tried to make as least as assumptions to finish the task.
 - There is an option to load more files at the runtime. The very same file can be used multiple times.
 - The currency conversion rates are fixed and hardcoded. 
 - Since *83 %* users still use Java 8 is the most used version so far (according to the [JetBrains 2019 survey](https://www.jetbrains.com/lp/devecosystem-2019/java/)), therefore the version is `8` used for this application as well.
-- The only allowed inputs are empty lines, specifying a file using `> filename.txt` or a payment itself, such as `GBP 200` including decimal or negative numbers.
+- The only allowed inputs are empty lines, specifying a file using `> filename.txt` or payment itself, such as `GBP 200` including decimal or negative numbers.
 - The payment balance can proceed to the negative values.
 - The recurring notification message about the current payment statement is set by default to `60` seconds and might be changed as the first entry point parameter. If a number lower than `10` is entered, it is ignored and `10` is used as a minimum input value.
 
