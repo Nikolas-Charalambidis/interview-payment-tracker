@@ -56,7 +56,13 @@ The integer parameter is optional and already discussed:
 
 ## Technical facts
 
-I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.5.2`) and Maven plugins `maven-surefire-plugin` for test executions, `maven-compiler-plugin` for the correct Java version compliancy and `maven-jar-plugin` for packaging with a snapshot-less name and included manifest. 
+I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.5.2`) and Maven plugins `maven-surefire-plugin` for test executions, `maven-compiler-plugin` for the correct Java version compliancy and `maven-jar-plugin` for packaging with a snapshot-less name and included manifest. I have tried to follow these rules I set for myself:
+
+- Immutable classes never returning `nulls`.
+- No static methods (except `main` :)).
+- No unnecessary inheritance.
+- The implemented methods are `final`, the classes not, which allows the extendibility using a wide range of constructors.
+- No getters/setters. All dependency injection happens through primary and secondary constructors. Strong encapsulation.
 
 #### Nice to have & technical debt
 
