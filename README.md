@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/Nikolas-Charalambidis/interview-payment-tracker.svg?branch=master)](https://travis-ci.org/Nikolas-Charalambidis/interview-payment-tracker)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a8582931744042bda6f9b908b72c85f1)](https://www.codacy.com/manual/Nikolas-Charalambidis/interview-payment-tracker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nikolas-Charalambidis/interview-payment-tracker&amp;utm_campaign=Badge_Grade)
+[![codebeat badge](https://codebeat.co/badges/f234e86f-6fe0-4566-8c22-cd539eefb605)](https://codebeat.co/projects/github-com-nikolas-charalambidis-interview-payment-tracker-master)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
 
 # Interview: Payment Tracker
