@@ -6,6 +6,4 @@ cache:
   - $HOME/.m2
   
 install: true
-script:
-  - ./mvnw clean install
-  - bash <(curl -s https://codecov.io/bash)
+script: mvn clean install
