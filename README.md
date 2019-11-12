@@ -20,7 +20,7 @@ The result is printed each minute (the recurrence period is a subject of paramet
     GBP 400 (USD 512.772)
     ====================================
     
-Load a file with:
+Load a file with (notice the `>` prefix):
 
     > file.txt
     
@@ -41,6 +41,7 @@ As a developer, I have tried to make as least as assumptions to finish the task.
 - The only allowed inputs are empty lines, specifying a file using `> filename.txt` or payment itself, such as `GBP 200` including decimal or negative numbers.
 - The payment balance can proceed to the negative values.
 - The recurring notification message about the current payment statement is set by default to `60` seconds and might be changed as the first entry point parameter. If a number lower than `10` is entered, it is ignored and `10` is used as a minimum input value.
+- The user might do a typo. The inputs such as `> file.txt` and `>file.txt` are both allowed. Also the multiple white characters should not be a problem.
 
 ## How to run
 
