@@ -1,0 +1,7 @@
+usd 100
+
+gbp 100
+gbp 100
+malformed
+usd 100
+usd 100
