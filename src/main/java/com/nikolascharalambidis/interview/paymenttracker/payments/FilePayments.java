@@ -1,7 +1,6 @@
 package com.nikolascharalambidis.interview.paymenttracker.payments;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -9,10 +8,20 @@ import java.util.Optional;
 import com.nikolascharalambidis.interview.paymenttracker.money.Money;
 import com.nikolascharalambidis.interview.paymenttracker.util.Lines;
 
+/**
+ * A representation of payments loaded from a file
+ */
 public class FilePayments implements Payments {
 
+	/**
+	 * Source file name
+	 */
 	private final String fileName;
 
+	/**
+	 * A primary constructor
+	 * @param fileName A file name
+	 */
 	public FilePayments(final String fileName) {
 		this.fileName = Optional.of(fileName)
 			.filter(s -> s.startsWith(">"))

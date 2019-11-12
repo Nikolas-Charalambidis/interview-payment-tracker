@@ -1,7 +1,6 @@
 package com.nikolascharalambidis.interview.paymenttracker;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumMap;
 import java.util.List;
@@ -18,8 +17,14 @@ import com.nikolascharalambidis.interview.paymenttracker.util.ConsoleNotificatio
 
 public class Main implements Runnable {
 
+	/**
+	 * A command terminating the application
+	 */
 	private static final String EXIT_STRING = "quit";
 
+	/**
+	 * The payments to be printed
+	 */
 	private final Map<Currency, Money> payments;
 	private final Scanner scanner;
 	private final Runnable notifications;
@@ -79,12 +84,22 @@ public class Main implements Runnable {
 		System.exit(0);
 	}
 
+	/**
+	 * A method merging the payments into the Map of all payments.{@link #mergePayments(List)}
+	 * @param payments The payments to be processed
+	 */
 	private void mergePayments(final Payments... payments) {
 		for (Payments p: payments) {
 			this.mergePayments(p.payments());
 		}
 	}
 
+	/**
+	 * A method merging the payments into the Map of all payments.
+	 * If the Currency exists among the keys, the payment is added up to the existing one.
+	 * Otherwise a new entry is created. The currencies with 0 amount are removed.
+	 * @param payments The payments to be processed
+	 */
 	private void mergePayments(final List<Money> payments) {
 		for (final Money m: payments) {
 			final BigDecimal amount = m.amount();

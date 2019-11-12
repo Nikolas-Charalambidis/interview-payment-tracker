@@ -6,11 +6,26 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * A pair of decimal number bound to a currency. Together representing money.
+ */
 public class MonetaryAmount implements Money {
 
+	/**
+	 * An amount of the money in the specified currency
+	 */
 	private BigDecimal amount;
+
+	/**
+	 * A currency
+	 */
 	private Currency currency;
 
+	/**
+	 * A primary constructor
+	 * @param amount An amount of the money in the specified currency
+	 * @param currency A currency
+	 */
 	public MonetaryAmount(final BigDecimal amount, final Currency currency) {
 		this.amount = amount.setScale(16, RoundingMode.HALF_EVEN);
 		this.currency = currency;

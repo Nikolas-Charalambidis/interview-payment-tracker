@@ -3,6 +3,9 @@ package com.nikolascharalambidis.interview.paymenttracker.money;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/**
+ * A class representing a currency with a rate to the USD
+ */
 public enum Currency {
 
 	USD("1"),
@@ -11,6 +14,9 @@ public enum Currency {
 	RMB("0.143299"),
 	NDZ("0.636576");
 
+	/**
+	 * An exchange rate to the USD
+	 */
 	private final BigDecimal exchangeRate;
 
 	Currency(final String exchangeRate) {

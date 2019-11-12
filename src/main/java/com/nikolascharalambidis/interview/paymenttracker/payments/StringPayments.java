@@ -11,10 +11,19 @@ import com.nikolascharalambidis.interview.paymenttracker.money.Currency;
 import com.nikolascharalambidis.interview.paymenttracker.money.MonetaryAmount;
 import com.nikolascharalambidis.interview.paymenttracker.money.Money;
 
+/**
+ * A representation of payments loaded from String lines
+ */
 public class StringPayments implements Payments {
 
+	/**
+	 * A Regex pattern to be matched
+	 */
 	private static final Pattern PATTERN = Pattern.compile("[A-Za-z]{3}\\s+-?\\d+([.,]\\d+)?");
 
+	/**
+	 * The input lines
+	 */
 	private final List<String> lines;
 
 	public StringPayments(final String... lines) {
