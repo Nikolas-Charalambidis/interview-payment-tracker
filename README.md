@@ -6,6 +6,8 @@
 
 # Interview: Payment Tracker
 
+## ⚠ No longer improved and left as delivered.
+
 A simple console application required to be developed as a sample before being invited to an interview. The application tracks the payments entered both to the console or loaded from a text file. There are 5 currencies available and their conversion rate is fixed and hardcoded across the application at the time of development: `USD`, `HKG`, `GBP`, `RMB` and `NDZ`.
 
 It works fairly easily, as soon as the application starts, enter payment transactions such as `GBP 100`, `USD -100` or `HKG 1050.25`. The text file used should follow the very same format and have up to one payment transaction per line.
