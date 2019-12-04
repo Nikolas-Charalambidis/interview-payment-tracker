@@ -35,7 +35,7 @@ And that's it :) Feel free to continue loading a file or typing more payments.
 
 **Disclaimer**: Neither I have got the rights nor asked for them to publish the full task assignment. However, it is easy to deduct it, though.
 
-#### Assumptions made
+### Assumptions made
 
 As a developer, I have tried to make as least as assumptions to finish the task. However, I implemented the program more flexible than required:
 - There is an option to load more files at the runtime. The very same file can be used multiple times.
@@ -68,7 +68,7 @@ I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.
 - The implemented methods are `final`, the classes not, which allows the extendibility using a wide range of constructors.
 - No getters/setters. All dependency injection happens through primary and secondary constructors. Strong encapsulation.
 
-## Code quality
+### Code quality
 
 [SonarCloud](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) is used for detailed code quality review:
 
@@ -78,7 +78,7 @@ I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.
 | Technical debt | [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=sqale_index)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=bugs)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=code_smells)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) |
 | Ratings | [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=security_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker)
 
-#### Nice to have & technical debt
+### Nice to have & technical debt
 
 - Use a public API to fetch the current conversion rates. Use the last known rate if the connection is temporarily unavailable or place the requirement into a queue.
 - Persist the payments.
