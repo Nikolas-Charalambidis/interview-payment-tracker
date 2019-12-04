@@ -74,4 +74,4 @@ I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.
 - Remember the files already included and offer a confirmation whether the very same file might be used multiple times.
 - Provide more friendly user input.
 - SonarCloud code quality integration and code coverage analysis integration.
-- More detailed unit test and refactor the file reading mechanism.
+- More detailed unit test and optimize the file handling mechanism for reading large files (batch reading).
