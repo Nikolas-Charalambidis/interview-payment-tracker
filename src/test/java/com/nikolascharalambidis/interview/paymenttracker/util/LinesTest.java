@@ -21,6 +21,6 @@ class LinesTest {
 	@Test
 	void testInvalidFile() {
 		Assertions.assertThrows(IOException.class, () ->
-			new Lines(Lines.class.getClassLoader().getResourceAsStream(WRONG_FILE_NAME), WRONG_FILE_NAME).get());
+			new Lines(Lines.class.getClassLoader().getResourceAsStream(WRONG_FILE_NAME), WRONG_FILE_NAME));
 	}
 }

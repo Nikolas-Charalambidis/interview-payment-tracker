@@ -5,5 +5,12 @@ cache:
   directories:
   - $HOME/.m2
   
+addons:
+  sonarcloud:
+    organization: "nikolas-charalambidis"
+    token:
+      secure: "lMntaF4YdaU4YivJCA8x5GkhXznlOAoNh+O0mz8IRNar5i159TO67EHJ745sDVtNmr6Kq0B80B+L3rZ5e6DvGLxmbbvgAmhYIXXw/Zyk1gO2YuPjaiqvUPhygp740WJWZSfm4Xia+wwPdTwcbwKekl3YY3fF1Q1D9d9F838quf7n3kLAXXZhvP/xDcNs2nE7QrOeJWolFtj6vCJkYcvMB31CYpRSdVqUICxoItXHzLjgq9hI1rTnSD9A629CH0OGYIglSZCkpB1YFn6yNPAgGiW3tpDR77GUYZ1svo0aTmAYOkSkRzwkoV9MLjf8GlnHnVFEUoZRbDK6HzMTaOZkjZbjU8AgIlZR42gb5Bc9UxF27lHFk8UYxNNPfSaz2yeYIf3O5jO434DnLjQVSdsQgJrLZJCCU9jDQw2Qey8o39Tw6OCPwv+Ik1xfH6+YTT762PeVklehqYG1QDiG2cjpqLKeDLhb4akMVg2pXIaeqOpkBcg/WdhBVqHW+3LsQOHuA8gBRbw5lJROOoWi7QkFWcDZcdAvpE4vBGH+t0CL4uMMVsfSxtwlc7QLGmDnzOKSc103H2iiX1hW443o+Ub4l1j4WzlO28goHDhbWyy8np26nq7n7S5zRCPndpiZkXpwBbsU2Nqpik7YEqnQpmRKVEuyiQWXn5rDU5NDF1aodlw="
+  
 install: true
-script: mvn clean install
+script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Nikolas-Charalambidis_interview-payment-tracker
+
