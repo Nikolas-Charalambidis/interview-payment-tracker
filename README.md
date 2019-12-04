@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/Nikolas-Charalambidis/interview-payment-tracker.svg?branch=master)](https://travis-ci.org/Nikolas-Charalambidis/interview-payment-tracker)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a8582931744042bda6f9b908b72c85f1)](https://www.codacy.com/manual/Nikolas-Charalambidis/interview-payment-tracker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nikolas-Charalambidis/interview-payment-tracker&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/f234e86f-6fe0-4566-8c22-cd539eefb605)](https://codebeat.co/projects/github-com-nikolas-charalambidis-interview-payment-tracker-master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=alert_status)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Nikolas-Charalambidis/react-hooks/blob/master/LICENSE)
 
 # Interview: Payment Tracker
@@ -67,11 +68,21 @@ I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.
 - The implemented methods are `final`, the classes not, which allows the extendibility using a wide range of constructors.
 - No getters/setters. All dependency injection happens through primary and secondary constructors. Strong encapsulation.
 
+## Code quality
+
+[SonarCloud](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) is used for detailed code quality review:
+
+| Type | Metrics & Indicators | 
+|--------------|--------------|
+| Overall statistics | [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=ncloc)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=coverage)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) |
+| Technical debt | [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=sqale_index)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=bugs)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=code_smells)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) |
+| Ratings | [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Nikolas-Charalambidis_interview-payment-tracker&metric=security_rating)](https://sonarcloud.io/dashboard?id=Nikolas-Charalambidis_interview-payment-tracker)
+
 #### Nice to have & technical debt
 
 - Use a public API to fetch the current conversion rates. Use the last known rate if the connection is temporarily unavailable or place the requirement into a queue.
 - Persist the payments.
 - Remember the files already included and offer a confirmation whether the very same file might be used multiple times.
 - Provide more friendly user input.
-- SonarCloud code quality integration and code coverage analysis integration.
+- ~~SonarCloud code quality integration and code coverage analysis integration.~~
 - More detailed unit test and optimize the file handling mechanism for reading large files (batch reading).
