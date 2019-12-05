@@ -56,7 +56,7 @@ There is no other magic than executing `mvn clean install` and running the conso
 
     java -jar interview-payment-tracker.jar
     
-The integer parameter is optional and already discussed:
+The integer parameter is optional, used for the recurring notification period and already discussed:
 
     java -jar interview-payment-tracker.jar 10
 
@@ -64,7 +64,7 @@ The integer parameter is optional and already discussed:
 
 I have used Maven dependencies for unit testing such as **jUnit 5** (version `5.5.2`) and Maven plugins `maven-surefire-plugin` for test executions, `maven-compiler-plugin` for the correct Java version compliancy and `maven-jar-plugin` for packaging with a snapshot-less name and included manifest. I have tried to follow these rules I set for myself:
 
-- Immutable classes never returning `nulls`.
+- Classes are immutable and methods never return `null`.
 - No static methods (except `main` :)).
 - No unnecessary inheritance.
 - The implemented methods are `final`, the classes not, which allows the extendibility using a wide range of constructors.
